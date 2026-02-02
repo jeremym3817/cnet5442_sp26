@@ -34,32 +34,29 @@ Syllabus: `syllabus/CNET_5442_Syllabus_sp26.pdf`
 
 ## Getting started
 
-### 1) Clone the repo in the directory where you want it
+### Python environment (CNET 5442)
+
+We use a shared conda environment so the notebooks run consistently across machines.
 
 ```bash
-git clone [https://github.com/<ORG_OR_USER>/<REPO_NAME>.git](https://github.com/jkbren/cnet5442_sp26.git)
+# 1) clone the repo
+git clone https://github.com/jkbren/cnet5442_sp26.git
 cd cnet5442_sp26
-```
 
-### 2) Create the conda environment
-
-This class uses a shared conda environment so notebooks run consistently across machines.
-
-```bash
+# 2) create + activate the environment
 conda env create -f environment.yml
 conda activate cnet5442
-```
 
-### 3) Register the environment as a Jupyter kernel (recommended)
-
-```bash
+# 3) register as a Jupyter kernel (recommended)
 python -m ipykernel install --user --name cnet5442 --display-name "Python (cnet5442)"
+
+# 4) launch Jupyter
+jupyter lab
 ```
 
-### 4) Launch Jupyter
-
+If `environment.yml` changes during the semester:
 ```bash
-jupyter lab
+conda env update -f environment.yml --prune
 ```
 
 ---

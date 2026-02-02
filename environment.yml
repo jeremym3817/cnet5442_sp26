@@ -1,0 +1,37 @@
+name: cnet5442
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+
+  # notebooks / interactive work
+  - jupyterlab
+  - ipykernel
+
+  # core scientific python stack
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+
+  # modeling
+  - scikit-learn
+  - statsmodels
+
+  # networks
+  - networkx
+
+  # common utilities
+  - requests
+  - tqdm
+
+  # lightweight local analytics DB (optional but handy)
+  - duckdb
+
+  # optional quality-of-life / common in sports notebooks
+  - seaborn
+
+  # allow pip-only packages when needed
+  - pip
+  - pip:
+      - statsbombpy
